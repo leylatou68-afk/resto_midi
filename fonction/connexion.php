@@ -1,0 +1,14 @@
+<?php 
+    $serveur = "localhost";
+    $login = "root";
+    $pass = "";
+
+    try{
+        $connexion = new PDO("mysql:host=$serveur;dbname=restaurant",$login,$pass);
+        $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //echo 'connexion à la base de données reussi';
+    }
+    catch(PDOException $e){
+        echo 'echec de la connexion : ' .$e->getMessage();
+    }
+    ?>
