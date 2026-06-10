@@ -56,5 +56,5 @@
          $sam->execute([$id]);
          $connexion = null;
      }   
-    updatePaiement( 2);
+    // updatePaiement( 2);
 ?>

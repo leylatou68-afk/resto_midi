@@ -37,12 +37,12 @@
     }
     // voirLiker(2);
     // supprimer un like
-    function supprimerLiker( $id ){
+      function updateliker( $id ){
          $id= intval($id);
          include dirname(__DIR__). '/fonction/connexion.php';
-         $sam = $connexion->prepare("DELETE FROM liker WHERE idliker = ?");
+         $sam = $connexion->prepare("UPDATE liker SET statutliker =  'non'  WHERE idliker = ?");
          $sam->execute([$id]);
          $connexion = null;
-     }    
+     }   
     // supprimerLiker(3);
 ?>
