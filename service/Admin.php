@@ -10,6 +10,7 @@
         $sam->execute([$nom, $prenom,$tel,$password]);
         $connexion = null;
         header("location: $redirect");
+        //STR_TO_DATE (?,'%d/%m/%Y') mise en forme de la date 
 
     }
     
