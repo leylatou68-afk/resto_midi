@@ -47,7 +47,7 @@
         $sam = $connexion->prepare("UPDATE produit SET nomprod = ?,stockprod = ?,prixprod = ?,description =? ,imageprod =? WHERE idprod = ? ");
         $sam->execute([$nom,$stock,$prix,$description,$image,$id]);
         $connexion = null;
-         header("location: $redirect");
+        //  header("location: $redirect");
     }
      
     //supprimer produit
@@ -57,7 +57,7 @@
          $sam = $connexion->prepare("DELETE FROM produit WHERE idprod = ?");
          $sam->execute([$id]);
          $connexion = null;
-     }    
+    }    
     
     
 ?>

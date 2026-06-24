@@ -59,6 +59,6 @@
          $sam = $connexion->prepare("DELETE FROM client WHERE idcli = ?");
          $sam->execute([$id]);
          $connexion = null;
-     }  
+    }  
 
 ?>

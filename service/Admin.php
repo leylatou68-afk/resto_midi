@@ -56,6 +56,6 @@
          $sam = $connexion->prepare("DELETE FROM admin WHERE idadmin = ?");
          $sam->execute([$id]);
          $connexion = null;
-     }    
+    }    
     
 ?>

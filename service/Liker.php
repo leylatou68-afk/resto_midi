@@ -1,5 +1,5 @@
 <?php
-      function creerliker($statut, $idprod,$idcli, $redirect)
+function creerliker($statut, $idprod,$idcli, $redirect)
 {
     $statut = htmlspecialchars($statut);
     $idprod= intval($idprod);
@@ -15,6 +15,7 @@
     $cmd->execute([ $statut, $idprod,$idcli ]);
 }
 // creerliker("non",5,3,"ici");
+
 //voir les likes
  function voirAllLiker(){
         include dirname(__DIR__). '/fonction/connexion.php';
