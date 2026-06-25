@@ -47,6 +47,7 @@
     text-decoration: none;
     text-align: center;
     background-color: black;
+    
 }
 
 .lien:hover{
@@ -105,6 +106,7 @@ h1{
     margin-bottom: 50px;
     flex-direction: column;
     width: 100%;
+   
 }
 #nav-barre1{
     display: flex;
@@ -118,10 +120,13 @@ h1{
 }
 #liste{
     background-color: rgba(255, 255, 255, 0.781);
-    padding: 20px 20Px;
-    max-width: 100%;
+    /* padding: 20px 20Px; */
+    width: 100%;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column  ;
 }
 #nav-barre2{
     display: flex;
@@ -176,7 +181,7 @@ footer {
     /* background-color: #4de072; */
 }
 table{
-    background-color: rgba(255, 255, 255, 0.63);
+    /* background-color: rgba(255, 255, 255, 0.63); */
     width: 100%;
    height: auto;
    display: table;
@@ -248,4 +253,40 @@ table{
 }
 .td5:hover{
     background-color:rgba(128, 4, 4, 0.593);
+}
+.td6{
+    background-color: transparent;
+}
+button{
+    margin-left: auto;
+    margin-top: -90px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    /* width: 100px; */
+    height: 40px;
+    background-color: rgba(4, 128, 25, 0.829);
+    color: white;
+    border-radius: 10%;
+    box-shadow: 3px     2Px  rgba(0, 0, 0, 0.158);
+    /* border-radius: 100px; */
+}
+#deroul{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    position: relative;
+}
+#deroul:hover #lis{
+    display: block;
+}
+
+#lis{
+    display: none;
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    color: black;
+    list-style-type: none;
+    padding: 30px;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONNEXION</title>
+    <title>MON PANIER</title>
     <link rel="stylesheet" href="asset/css/monpanier.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -16,8 +16,16 @@
         <div id="sam">
             <a href="acceuil.php" class="lien">ACCEUIL</a>
             <a href="nosplats.php" class="lien">NOS PLATS</a>
-            <a href="connexion.php" class="lien">DECONNEXION</a>
             <a href="monpanier.php" class="lien1">MON PANIER</a>
+            <div id='deroul'>
+                <a href="#" class="lien">DECONNEXION</a>
+                <ul id='lis'>
+                    <li><a href="" class="lien">Mon compte</a></li>
+                    <li><a href="" class="lien">Modifier</a></li>
+                    <li><a href="" class="lien">etc...</a></li>
+                </ul>
+            </div>
+            
         </div>
     </nav>
 
@@ -26,8 +34,8 @@
     </header>
     <div id= 'div-vide'>
        <h1 id='titre'>MON PANIER</h1>
-        <!--  <div id='liste'>
-        <div id='nav-barre1'>
+         <div id='liste'>
+        <!--<div id='nav-barre1'>
                 <h3>Produits</h3>
                 <h3>Prix</h3>
                 <h3>Quantité</h3>
@@ -66,6 +74,7 @@
                
             </div>
         </div> -->
+
          <table >
                 <tr class='nav-barre2'>
                     <td class='tr1'>Produits</td>
@@ -116,9 +125,31 @@
                         <img src="asset/images/poub.svg" alt="trash" class='icons1'>
                     </td>
                 </tr>
+                <tr class='nav-barre2'>
+                    <td class='td6'></td>
+                    <td class='td6'></td>
+                    <td class='td3'>Totaux</td>
+                    <td class='td4'>4000F</td>
+                </tr>
             </table>
+            <button >COMMANDER</button>
+        </div>
     </div>
-    
+<script>
+    const menuParent = document.getElementById('deroul');
+
+    // Affiche au survol
+    menuParent.addEventListener('mouseenter', () => {
+        menuParent.classList.add('active');
+    });
+
+    // Ferme si on clique n'importe où ailleurs sur la page
+    document.addEventListener('click', (evenement) => {
+        if (!menuParent.contains(evenement.target)) {
+            menuParent.classList.remove('active');
+        }
+    });
+</script>
 
 </body>
 </html>
