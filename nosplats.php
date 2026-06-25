@@ -17,6 +17,7 @@
             <a href="acceuil.php" class = 'lien'>ACCEUIL</a> 
             <a href="nosplats.php" class = 'lien1'>NOS PLATS </a> 
             <a href="connexion.php" class = 'lien'>CONNEXION</a> 
+             <a href="monpanier.php" class="lien">MON PANIER</a>
         </div>
     </nav>
 
