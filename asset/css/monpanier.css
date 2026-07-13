@@ -266,27 +266,78 @@ button{
     height: 40px;
     background-color: rgba(4, 128, 25, 0.829);
     color: white;
-    border-radius: 10%;
+    border-radius: 10px;
     box-shadow: 3px     2Px  rgba(0, 0, 0, 0.158);
     /* border-radius: 100px; */
 }
 #deroul{
-    color: white;
+    /* color: white; */
     text-decoration: none;
     text-align: center;
-    background-color: black;
+    background-color:white;
     position: relative;
 }
 #deroul:hover #lis{
     display: block;
 }
-
-#lis{
+#info-user{
     display: none;
-    position: absolute;
     background-color: white;
-    flex-direction: column;
     color: black;
     list-style-type: none;
-    padding: 30px;
+    padding: 10px;
+}
+.profil-container{
+    /* background-color: rgb(187, 25, 25); */
+    padding: 10px;
+    padding-top: 0px;
+    height: auto;
+    position: relative;
+    z-index: 10px;
+}
+.lien2{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;   
+}
+
+.lien2:hover{
+    color:rgb(205, 7, 7) !important;
+    text-decoration-color:rgb(205, 7, 7);
+}
+.inp{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(96, 96, 167) ;
+    padding: 20px;
+    margin: 9px;
+    width: 500px;
+    border-radius:10px;
+}
+#paiement-container{
+    display:none;
+    margin-top: 0px;
+}
+
+#bouton{
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#annuler {
+    margin-top: 20px;
+    background-color: rgb(221, 71, 25);
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#rah{
+    font-size: 50px;
 }

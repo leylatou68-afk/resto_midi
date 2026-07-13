@@ -135,21 +135,8 @@
             <button >COMMANDER</button>
         </div>
     </div>
-<script>
-    const menuParent = document.getElementById('deroul');
-
-    // Affiche au survol
-    menuParent.addEventListener('mouseenter', () => {
-        menuParent.classList.add('active');
-    });
-
-    // Ferme si on clique n'importe où ailleurs sur la page
-    document.addEventListener('click', (evenement) => {
-        if (!menuParent.contains(evenement.target)) {
-            menuParent.classList.remove('active');
-        }
-    });
-</script>
+    <!-- <script src="asset/js/style.js"></script> -->
+     <script type="module" src="asset/js/style.js"></script>
 
 </body>
 </html>
